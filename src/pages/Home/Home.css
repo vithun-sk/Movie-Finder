@@ -1,0 +1,168 @@
+.section1 {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  animation: span-moving-anime 1s linear;
+}
+.section1::before,
+.section1::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 120px;
+  height: 90%;
+  z-index: 2;
+  pointer-events: none;
+}
+.section1::before {
+  left: 0;
+  background: linear-gradient(to right, #0f172a, transparent);
+}
+.section1::after {
+  right: 0;
+  background: linear-gradient(to left, #0f172a, transparent);
+}
+.image-slider {
+  display: flex;
+  width: max-content;
+  animation: scroll 8s linear infinite;
+}
+.section1:hover .image-slider {
+  animation-play-state:paused;
+}
+.sliding-img {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 40px;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* Center image highlight */
+.sliding-img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes span-moving-anime {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.home_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(248, 250, 248, 0.992);
+}
+.home_head {
+  font-size: 45px;
+  margin: 10px 0px;
+  text-align: center;
+}
+.home_content1 {
+  font-size: 23px;
+  width: 90%;
+  max-width: 900px;
+  margin: 10px 0px;
+  text-align: center;
+}
+.home_content2 {
+  font-size: 30px;
+  margin: 30px;
+  text-align: center;
+}
+.search_btn {
+  margin: 10px 0px 50px 0px;
+  width: 250px;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgba(0, 255, 255, 0.422);
+  color: white;
+  font-size: 23px;
+  box-shadow: 1px 1px 8px black;
+}
+/* Animations */
+
+.home_head {
+  animation: head-anime 1.3s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes head-anime {
+  0% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.home_content1 {
+  animation: para-anime 1.3s ease;
+  animation-fill-mode: both;
+}
+
+@keyframes para-anime {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.home_content2 {
+  animation: head2-anime 1.3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes head2-anime {
+  from {
+    transform: translate(-150px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+
+.search_btn {
+  animation: btn-anime 1.3s ease-in-out;
+  animation-fill-mode: both;
+  cursor: pointer;
+}
+
+@keyframes btn-anime {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.search_btn_parent:hover {
+  transition: transform 0.6s linear;
+  transform: scale(1.2);
+}
