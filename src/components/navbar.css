@@ -60,11 +60,13 @@ nav {
     padding: 0;
   }
   .nav_head{
-    padding: 20px;
+    padding: 10px;
+    font-size: 35px;
   }
   .hamburger {
     display: block;
     margin-right: 20px;
+    font-size: 30px;
   }
   .nav_lists {
     display: none;
@@ -79,7 +81,7 @@ nav {
     z-index: 10;
   }
   .nav_lists li {
-    border-bottom: white 2px solid;
+    border-bottom: rgba(128, 128, 128, 0.222) 2px solid;
     padding: 20px;
   }
   .nav_link.active::after {
@@ -89,7 +91,7 @@ nav {
     border: none;
   }
   li:first-child{
-    border-top: 2px white solid;
+    border-top: 2px rgba(128, 128, 128, 0.362) solid;
   }
   .nav_lists.show {
     display: flex;

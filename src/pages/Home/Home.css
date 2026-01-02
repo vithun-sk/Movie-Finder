@@ -166,3 +166,26 @@
   transition: transform 0.6s linear;
   transform: scale(1.2);
 }
+
+@media (max-width:860px){
+  .section1::before, .section1::after{
+    width: 50px;
+  }
+  .sliding-img{
+    width: 200px;
+    height: 300px;
+  }
+  .home_head{
+    font-size: 32px;
+  }
+  .home_content1{
+    font-size: 18px;
+  }
+  .home_content2{
+    font-size: 25px;
+  }
+  .search_btn{
+    width: 200px;
+    font-size: 18px;
+  }
+}
