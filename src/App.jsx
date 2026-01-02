@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router , Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar.jsx";
 import Home from "./pages/Home/Home";
 import SearchMovies from "./pages/Search/Searchmovies";
@@ -12,7 +12,7 @@ function App() {
   
   return (
     <>
-      <BrowserRouter basename="/Movie-Finder">
+      <Router >
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -23,7 +23,7 @@ function App() {
           ></Route>
           <Route path="/favourites" element={< Favourites likedMovies={likedMovies}  setLikedMovies={setLikedMovies}/>}></Route>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

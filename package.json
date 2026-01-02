@@ -1,6 +1,5 @@
 {
   "name": "moviefinder",
-  "homepage": "https://vithun-sk.github.io/Movie-Finder/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
