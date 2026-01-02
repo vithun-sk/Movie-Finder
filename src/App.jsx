@@ -12,7 +12,7 @@ function App() {
   
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/Movie-Finder">
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home />}></Route>
