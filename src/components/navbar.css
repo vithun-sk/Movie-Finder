@@ -82,7 +82,7 @@ nav {
   }
   .nav_lists li {
     border-bottom: rgba(128, 128, 128, 0.222) 2px solid;
-    padding: 20px;
+    padding: 10px;
   }
   .nav_link.active::after {
     display: none;

@@ -78,9 +78,6 @@
   max-width: 100%;
   min-width: 0;
 }
-.movie_card:hover {
-  opacity: 0.5;
-}
 
 @keyframes card-anime {
   0% {
@@ -96,7 +93,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.9);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -107,7 +104,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.9);
+    transform: scale(1.5);
   }
   100% {
     transform: scale(1);
@@ -185,8 +182,8 @@
     font-size: 17px;
   }
    .movie_card {
-    margin: 5px;
-    padding: 8px;
+    margin: 3px;
+    padding: 5px;
   }
   .movie_img {
     width: 250px;
@@ -208,18 +205,18 @@
     margin: 0;
   }
   .movie_card {
-    margin: 3px;
-    padding: 5px;
+    margin: auto;
+    padding: 10px;
   }
   .favorite_btn{
-    font-size: 25px;
+    font-size: 20px;
   }
   .movie_img {
-    width: 150px;
+    width: 160px;
     height: 200px;
   }
   .movie_details {
-    width: 150px;
+    width: 160px;
   }
   .details-btn{
     font-size: 8px;
@@ -261,7 +258,6 @@
     font-size: 15px;
     padding: 5px 0;
   }
-
   .close-btn {
     top: 10px;
     right: 10px;
