@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Searchmovies.css";
 import { fetchMovies } from "../../services/api";
+import { FaSearch } from "react-icons/fa";
 
 const API_KEY = "60f32e9f4ccbea87a65c980c191560dc";
 const BASE_URL = "https://api.themoviedb.org/3";
@@ -76,7 +77,7 @@ function Searchmovies({ likedMovies, setLikedMovies }) {
           />
           {searchInput.trim() !== "" && (
             <button className="search_button" onClick={searchInputValue}>
-              🔍︎
+               <FaSearch />
             </button>
           )}
         </div>
