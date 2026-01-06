@@ -1,101 +1,117 @@
-🎬 Movie Finder – Movie Search Web Application
+# 🎬 Movie Finder – Movie Search Web Application
 
-Movie Finder is a responsive frontend web application that allows users to search movies, explore popular and trending titles, and view detailed movie information using real-time movie data.
-It provides a clean and interactive interface for discovering movies effortlessly.
+Movie Finder is a responsive frontend web application that allows users to search for movies, explore popular titles, and view detailed movie information using real-time data from a movie API.
+It provides a smooth and user-friendly experience for discovering movies easily.
 
-🚀 Live Demo
+---
 
-🔗 Live Demo
+## 🚀 Live Demo
+🔗 **[Live Demo](https://movie-finder-five-delta.vercel.app/)**
 
-📖 About the Project
+---
 
-Finding the right movie to watch can sometimes be confusing with so many options available.
-Movie Finder solves this problem by offering a simple and user-friendly platform where users can:
+## 📖 About the Project
 
-Search for movies by name
+Choosing a movie to watch can be difficult with so many options available.
+Movie Finder simplifies this by offering a clean platform where users can:
 
-View popular and trending movies
+Search movies by title
 
-Explore detailed information like ratings, overview, release date, and posters
+Browse popular and trending movies
 
-This project focuses entirely on the frontend, consuming data from a public movie API and presenting it in a visually appealing way.
+View detailed information such as ratings, overview, release date, and posters
 
-🧩 Key Features
+This project is focused entirely on frontend development and API integration.
+---
 
-✅ Movie search functionality using live API data
+## 🧩 Key Features
 
-✅ Popular and trending movies section
+- Movie search using live API data
 
-✅ Detailed movie information view
+- Popular and trending movies section
 
-✅ Responsive design for all screen sizes
+- Detailed movie information view
 
-✅ Clean UI with smooth navigation
+- Responsive design for mobile, tablet, and desktop
 
-✅ Fast loading movie cards with posters
+- Clean UI with smooth navigation
 
-✅ Deployed using Vercel
+- Fast-loading movie cards with posters
 
-🛠️ Tech Stack
-Category	Technologies
-Frontend	HTML, CSS, JavaScript, React
-API	The Movie Database (TMDB) API
-Deployment	Vercel
-Tools Used	VS Code, Git, GitHub
-🧠 Learning Outcomes
+- Deployed using Vercel  
 
-Through this project, I gained hands-on experience in:
+---
 
-Working with REST APIs and fetching dynamic data
+## 🛠️ Tech Stack
 
-Managing state and components in React
+| Category | Technologies |
+|-----------|--------------|
+| **Frontend** | HTML, CSS, JavaScript, React |
+| **API** |The Movie Database (TMDB) API |
+| **Deployment** | Vercel |
+| **Tools Used** | VS Code, Git, GitHub |
 
-Handling search functionality and conditional rendering
+---
 
-Building reusable UI components
+## 🧠 Learning Outcomes
 
-Implementing responsive layouts using CSS
+- During this project, I learned how to:
 
-Deploying React applications on Vercel
+- From this project, I learned how to:
 
-🧰 Installation & Setup
+- Fetch and display data from REST APIs
 
-To run this project locally, follow these steps:
+- Work with React components and state
 
-Clone the repository
+- Implement search functionality and conditional rendering
 
-git clone https://github.com/vithun-sk/movie-finder.git
+- Build reusable UI components
+
+- Create responsive layouts using CSS
+
+- Deploy a React application on Vercel
+
+---
+
+## 🧰 Installation & Setup
+
+Follow these steps to run this project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/vithun-sk/movie-finder.git
+2. Navigate into the project directory
+   ```bash
+    cd movie-finder
+3. Install dependencies
+   ```bash
+   npm install
+4. Start the development server
+5. ```bash
+   npm start
+6. Open your browser and visit
+   ```bash
+   http://localhost:3000
 
 
-Navigate into the project directory
 
-cd movie-finder
+---
 
-
-Install dependencies
-
-npm install
-
-
-Run the application
-
-npm start
-
-
-Open your browser and visit:
-
-http://localhost:3000
 
 🙌 Contributions
 
-Contributions, suggestions, and improvements are always welcome.
-Feel free to fork the repository and submit a pull request.
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a pull request.
+
+---
 
 🧑‍💻 Developed by
 
 Vithun S K
+
 Frontend Developer | MERN Stack Learner
 
-📧 Email: vithunkumar07@gmail.com
+📧 Email: [vithunkumar07@gmail.com]
 
-🔗 LinkedIn: https://www.linkedin.com/in/vithun-sk/
+🔗 LinkedIn: [https://www.linkedin.com/in/vithun-sk/]
+
