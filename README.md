@@ -27,17 +27,11 @@ This project is focused entirely on frontend development and API integration.
 ## 🧩 Key Features
 
 - Movie search using live API data
-
 - Popular and trending movies section
-
 - Detailed movie information view
-
 - Responsive design for mobile, tablet, and desktop
-
 - Clean UI with smooth navigation
-
 - Fast-loading movie cards with posters
-
 - Deployed using Vercel  
 
 ---
@@ -58,15 +52,10 @@ This project is focused entirely on frontend development and API integration.
  From this project, I learned how to:
 
 - Fetch and display data from REST APIs
-
 - Work with React components and state
-
 - Implement search functionality and conditional rendering
-
 - Build reusable UI components
-
 - Create responsive layouts using CSS
-
 - Deploy a React application on Vercel
 
 ---
