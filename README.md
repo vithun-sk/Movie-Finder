@@ -56,7 +56,6 @@ This project is focused entirely on frontend development and API integration.
 ## 🧠 Learning Outcomes
 
 - During this project, I learned how to:
-
 - From this project, I learned how to:
 
 - Fetch and display data from REST APIs
@@ -92,8 +91,6 @@ Follow these steps to run this project locally:
 6. Open your browser and visit
    ```bash
    http://localhost:3000
-
-
 
 ---
 
