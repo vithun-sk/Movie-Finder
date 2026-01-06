@@ -16,7 +16,7 @@ function Topmovies({setLikedMovies , likedMovies}) {
     const loadMovies = async () => {
       try {
         let allMovies = [];
-        const data = await fetchMovies("movie/top_rated", 1);
+        const data = await fetchMovies("movie/top_rated", page);
         allMovies = [...allMovies, ...data];
         setTopRatedMovies(allMovies);
       } catch (error) {

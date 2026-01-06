@@ -50,10 +50,10 @@ function Searchmovies({ likedMovies, setLikedMovies }) {
     setLoading(true);
     try {
       let movieMap = new Map();
-      for (let page = 1; page <= 4; page++) {
+      for (let page = 1; page <= 10; page++) {
         const data = await fetchMovies("search/movie", page, searchInput);
         data.forEach((movie) => {
-          movieMap.set(movie.id, movie);
+        movieMap.set(movie.id, movie);
         });
       }
       setMovies([...movieMap.values()]);
