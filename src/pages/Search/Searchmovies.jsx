@@ -157,7 +157,7 @@ function Searchmovies({ likedMovies, setLikedMovies }) {
             />
           ))
         ) : (
-          <p className="noMoviesFound">No Movies Found 😕</p>
+          <p className="noMoviesFound">No Movies Found..</p>
         )}
       </div>
     </>
