@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const API_KEY = "60f32e9f4ccbea87a65c980c191560dc";
 const BASE_URL = "https://api.themoviedb.org/3";
 
-function Topmovies({setLikedMovies , likedMovies}) {
+function Topmovies({ setLikedMovies, likedMovies }) {
   const [TopRatedMovies, setTopRatedMovies] = useState([]);
   const [loading, setloading] = useState(true);
 
@@ -16,6 +16,7 @@ function Topmovies({setLikedMovies , likedMovies}) {
     const loadMovies = async () => {
       try {
         let allMovies = [];
+        const page = 1;
         const data = await fetchMovies("movie/top_rated", page);
         allMovies = [...allMovies, ...data];
         setTopRatedMovies(allMovies);
@@ -118,7 +119,7 @@ function Topmovies({setLikedMovies , likedMovies}) {
             key={movie.id}
             movie={movie}
             showMovieInfo={() => setSelectedMovie(movie)}
-            setLikedMovies={ setLikedMovies}
+            setLikedMovies={setLikedMovies}
             likedMovies={likedMovies}
           />
         ))}
@@ -127,25 +128,25 @@ function Topmovies({setLikedMovies , likedMovies}) {
   );
 }
 
-function MovieList({ movie, showMovieInfo , setLikedMovies ,likedMovies }) {
+function MovieList({ movie, showMovieInfo, setLikedMovies, likedMovies }) {
 
-  const isLiked = likedMovies?.some((m)=>m.id === movie.id)|| false
-  const toggleFavourite = () =>{
-    setLikedMovies((prev) =>{
-      if(isLiked){
+  const isLiked = likedMovies?.some((m) => m.id === movie.id) || false
+  const toggleFavourite = () => {
+    setLikedMovies((prev) => {
+      if (isLiked) {
         return prev.filter((m) => m.id !== movie.id);
-      }else {
+      } else {
         return [...prev, movie];
       }
     })
   }
- 
+
   return (
     <>
       <div className="movie_card">
         <div className="movie_img">
           <img
-          loading="lazy"
+            loading="lazy"
             src={
               movie.poster_path !== "N/A"
                 ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
@@ -156,10 +157,9 @@ function MovieList({ movie, showMovieInfo , setLikedMovies ,likedMovies }) {
           />
           <button
             onClick={toggleFavourite}
-            className={`favorite_btn ${
-              isLiked ? "liked_anime" : "notliked_anime"
-            }`} 
-            type="button" 
+            className={`favorite_btn ${isLiked ? "liked_anime" : "notliked_anime"
+              }`}
+            type="button"
           >
             {isLiked ? "❤️" : "🤍"}
           </button>
